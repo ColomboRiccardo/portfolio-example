@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 60%;
+}
+.section {
+	min-height: 600px;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+nav ul li {
+	margin: 0 20px;
+}
+#home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 100px;
+}
+#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#bars {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	margin: 20px 0;
+	justify-content: center;
+}
+.barComplete {
+	margin: 0 20px;
+}
+.bar {
+	width: 300px;
+	height: 20px;
+	background-color: gray;
+}
+#service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+#serviceContainer {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+.containerOne {
+	margin: 0 20px;
+}
+#portfolio {
+	text-align: center;
+}
+#projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.portfolioImg {
+	height: 200px;
+	width: 250px;
+	background-color: gray;
+	margin: 10px 15px;
+	flex-grow: 1fr 1fr 1fr;
+}
+#contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+input {
+	width: 60%;
+}
