@@ -1,7 +1,12 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
+	padding: 0px;
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	--priColor: black;
+	--secColor: white;
+	--terColor: grey;
 }
 #container {
 	display: flex;
@@ -12,6 +17,45 @@
 .section {
 	min-height: 600px;
 }
+/* *elements styling section */
+button {
+	font-size: 100%;
+	font-style: inherit;
+	padding: 10px 30px;
+	background-color: var(--priColor);
+	color: var(--secColor);
+	border: 3px var(--priColor) solid;
+	margin: 10px 0;
+}
+.buttonSec {
+	font-size: 100%;
+	font-style: inherit;
+	padding: 10px 30px;
+	background-color: var(--secColor);
+	border: 3px var(--priColor) solid;
+	color: var(--priColor);
+	margin: 10px 0;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin: 10px 0px;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+textarea {
+	width: 60%;
+	margin: 10px 0;
+}
+
+/* *Header section */
 header {
 	display: flex;
 	flex-direction: row;
@@ -26,17 +70,32 @@ nav ul {
 nav ul li {
 	margin: 0 20px;
 }
+nav a {
+	color: var(--priColor);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav a:hover {
+	color: var(--terColor);
+	text-decoration: underline;
+}
+/* *home section */
 #home {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 100px;
 }
+/* *about section */
 #about {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+}
+#about p {
+	width: 70%;
 }
 #bars {
 	display: flex;
@@ -52,14 +111,18 @@ nav ul li {
 .bar {
 	width: 300px;
 	height: 20px;
-	background-color: gray;
+	background-color: var(--terColor);
 }
+/* *service section */
 #service {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+}
+#service p {
+	width: 80%;
 }
 #serviceContainer {
 	display: flex;
@@ -68,9 +131,24 @@ nav ul li {
 }
 .containerOne {
 	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+/* *portfolio section */
 #portfolio {
 	text-align: center;
+}
+#hours {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 40px 0;
+}
+.time p,
+.time h4 {
+	font-size: 35px;
 }
 #projects {
 	display: flex;
@@ -80,11 +158,12 @@ nav ul li {
 }
 .portfolioImg {
 	height: 200px;
-	width: 250px;
-	background-color: gray;
-	margin: 10px 15px;
+	width: 300px;
+	background-color: var(--terColor);
+	margin: 15px 5px;
 	flex-grow: 1fr 1fr 1fr;
 }
+/* *contact section */
 #contacts {
 	display: flex;
 	flex-direction: column;
@@ -97,4 +176,5 @@ form {
 }
 input {
 	width: 60%;
+	margin: 10px 0px;
 }
